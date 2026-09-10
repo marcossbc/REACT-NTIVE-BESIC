@@ -3,6 +3,7 @@
     "name": "besic-react",
     "slug": "besic-react",
     "version": "1.0.0",
+    "scheme": "besic-react",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -19,6 +20,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
