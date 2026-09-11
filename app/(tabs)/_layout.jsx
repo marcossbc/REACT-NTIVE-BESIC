@@ -3,7 +3,11 @@ import { FontAwesome } from '@expo/vector-icons';
 
 const TabLayout = () => {
   return (
-    <Tabs>
+    <Tabs screenOptions={{
+      
+      tabBarActiveTintColor: 'tomato',
+      tabBarInactiveTintColor: 'gray',
+    }}>
       <Tabs.Screen
         name="index"
         options={{
@@ -20,6 +24,16 @@ const TabLayout = () => {
           title: 'Profile',
           tabBarIcon: ({ color }) => (
             <FontAwesome name="user" size={24} color={color} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="scan"
+        options={{
+          title: 'Scan',
+          tabBarIcon: ({ color }) => (
+            <FontAwesome name="qrcode" size={24} color={color} />
           ),
         }}
       />
